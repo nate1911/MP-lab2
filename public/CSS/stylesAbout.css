@@ -1,0 +1,82 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color */
+body {
+    background: linear-gradient(to right, #c49990, #6c4fbc);
+
+}
+
+/* Style the header */
+header {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation */
+nav {
+    background-color: #fff; /* Change background color to white */
+    padding: 10px; /* Add padding to the navigation */
+    text-align: center; /* Center-align the text */
+}
+
+nav ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Display menu items inline */
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #b23a3a; /* Text color for links */
+    font-weight: bold;
+}
+
+/* Style the main content */
+.main {
+    padding: 20px;
+}
+
+/* Style the profile container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style the profile picture */
+.profile-picture img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+/* Style the profile details */
+.profile-details {
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    /* Add your CSS rules here */
+}
+
