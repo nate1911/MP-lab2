@@ -14,13 +14,36 @@ async function fetchRecipes() {
                 <td>${Array.isArray(recipe.ingredients) ? recipe.ingredients.join(', ') : ''}</td>
                 <td>${recipe.instructions || ''}</td>
                 <td>${recipe.cookingtime ? recipe.cookingtime + ' minutes' : ''}</td>
+                <td>
+                <div class="col-md-6">
+                <button class="btn btn-danger delete-button mb-2">Delete</button>
+            </div>
+            
+
+                </td>
+              
             `;
             recipeList.appendChild(row);
+
+            // Add a click event listener to the delete button
+            const deleteButton = row.querySelector(".delete-button");
+            deleteButton.addEventListener("click", async () => {
+                try {
+                    console.log(recipe._id)
+                    // Send a DELETE request to your API to delete the corresponding recipe
+                    await axios.delete(`/api/recipes/${recipe._id}`); // Replace with the correct API endpoint and ID
+                    // Remove the table row when the delete button is clicked
+                    row.remove();
+                } catch (error) {
+                    console.error('Error deleting recipe:', error);
+                }
+            });
         });
     } catch (error) {
         console.error('Error fetching recipe data:', error);
     }
 }
+
 
 
 async function searchRecipe() {
@@ -45,8 +68,24 @@ async function searchRecipe() {
                 <td>${Array.isArray(recipe.ingredients) ? recipe.ingredients.join(', ') : ''}</td>
                 <td>${recipe.instructions || ''}</td>
                 <td>${recipe.cookingtime ? recipe.cookingtime + ' minutes' : ''}</td>
+                <td>
+                    <button class="btn btn-danger delete-button">Delete</button>
+                </td>
             `;
             recipeList.appendChild(row);
+
+            const deleteButton = row.querySelector(".delete-button");
+            deleteButton.addEventListener("click", async () => {
+                try {
+                    console.log(recipe._id)
+                    // Send a DELETE request to your API to delete the corresponding recipe
+                    await axios.delete(`/api/recipes/${recipe._id}`); // Replace with the correct API endpoint and ID
+                    // Remove the table row when the delete button is clicked
+                    row.remove();
+                } catch (error) {
+                    console.error('Error deleting recipe:', error);
+                }
+            });
         } else {
             // Display a message when no recipe is found
             const noResultsRow = document.createElement('tr');

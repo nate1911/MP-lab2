@@ -76,7 +76,16 @@ footer {
     color: #333;
 }
 
+p{
+    font-size: 50px;
+}
+
 @media (max-width: 768px) {
-    /* Add your CSS rules here */
+    p{
+        font-size: medium;
+    }
+    .profile-picture img{
+        max-width: 100px;
+    }
 }
 
