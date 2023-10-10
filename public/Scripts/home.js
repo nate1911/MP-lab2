@@ -30,9 +30,8 @@ async function fetchRecipes() {
             deleteButton.addEventListener("click", async () => {
                 try {
                     console.log(recipe._id)
-                    // Send a DELETE request to your API to delete the corresponding recipe
-                    await axios.delete(`/api/recipes/${recipe._id}`); // Replace with the correct API endpoint and ID
-                    // Remove the table row when the delete button is clicked
+                    await axios.delete(`/api/recipes/${recipe._id}`); 
+                   
                     row.remove();
                 } catch (error) {
                     console.error('Error deleting recipe:', error);
@@ -54,12 +53,10 @@ async function searchRecipe() {
     const recipeList = document.getElementById('recipe-list');
     recipeList.innerHTML = '';
 
-    // Fetch the specific recipe based on the search term
     try {
         const response = await axios.get(`/api/recipes/${encodeURIComponent(searchTerm)}`);
         const recipe = response.data;
 
-        // Check if a recipe was found
         if (recipe) {
             // Create HTML table row for the found recipe
             const row = document.createElement('tr');
@@ -78,16 +75,14 @@ async function searchRecipe() {
             deleteButton.addEventListener("click", async () => {
                 try {
                     console.log(recipe._id)
-                    // Send a DELETE request to your API to delete the corresponding recipe
-                    await axios.delete(`/api/recipes/${recipe._id}`); // Replace with the correct API endpoint and ID
-                    // Remove the table row when the delete button is clicked
+                    await axios.delete(`/api/recipes/${recipe._id}`);
+                   
                     row.remove();
                 } catch (error) {
                     console.error('Error deleting recipe:', error);
                 }
             });
         } else {
-            // Display a message when no recipe is found
             const noResultsRow = document.createElement('tr');
             noResultsRow.innerHTML = `
                 <td colspan="4">No matching recipe found.</td>
@@ -100,8 +95,6 @@ async function searchRecipe() {
 }
 
 
-// Add an event listener to the search button
 document.getElementById('search-button').addEventListener('click', searchRecipe);
 
-// Call the fetchRecipes function to load and display recipes when the page loads
 window.onload = fetchRecipes;

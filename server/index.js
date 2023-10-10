@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, '..', 'public'))); // Serve static files from the 'client' directory
+app.use(express.static(path.join(__dirname, '..', 'public'))); 
 app.use(bodyParser.json());
 
 app.use('/api/recipes', recipesRoutes);
