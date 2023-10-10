@@ -1,26 +1,22 @@
-/* Apply styles to the header section */
-
 body {
     font-family: Arial, sans-serif;
-    /* background: linear-gradient(to right, #c49990, #6c4fbc); */
     margin: 0;
     padding: 0;
 
 }
 
 header {
-    background-color: #fff; /* Background color for the header */
-    color: #fff; /* Text color for the header */
-    text-align: center; /* Center-align the text */
-    padding: 0px; /* Add padding to the header */
+    background-color: #fff; 
+    color: #fff; 
+    text-align: center; 
+    padding: 0px; 
 }
 
-/* Style for the logo */
+
 .logo {
-    max-width: 100px; /* Adjust the max-width as needed */
+    max-width: 100px; 
 }
 
-/* Style for the title */
 header h1 {
     font-size: 24px;
     margin-top: 0;
@@ -29,15 +25,14 @@ header h1 {
 
 
 nav {
-    background-color: #fff; /* Change background color to white */
-    padding: 10px; /* Add padding to the navigation */
+    background-color: #fff; 
+    padding: 10px; 
     
 }
 
 
-/* Style navigation links */
 nav ul {
-    list-style-type: none; /* Remove list bullets */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
     
@@ -45,20 +40,19 @@ nav ul {
 }
 
 nav ul li {
-    display: inline; /* Display menu items inline */
-    margin-right: 20px; /* Add spacing between menu items */
+    display: inline; 
+    margin-right: 20px; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #b23a3a; /* Text color for links */
-    font-weight: bold; /* Make links bold */
+    text-decoration: none; 
+    color: #b23a3a; 
+    font-weight: bold; 
 }
 
-/* Style the main content section */
 main.container {
-    padding-left: 0; /* Remove the left padding */
-    padding-right: 0; /* Remove the right padding */
+    padding-left: 0; 
+    padding-right: 0; 
     margin: 20px 0;
 
     width: 100%;
@@ -66,27 +60,20 @@ main.container {
     box-sizing: border-box;
 }
 
-/* Add styles to headings, paragraphs, and other elements as needed */
 h1 {
-    color: #333; /* Heading text color */
+    color: #333; 
 }
 
 p {
-    color: #555; /* Paragraph text color */
+    color: #555; 
 }
-
-/* Custom CSS for screens smaller than 768px (e.g., mobile phones) */
 
 
 table {
-    /* width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: white; */
 
-    width: 100%; /* Set the width to 100% to make it fit the screen */
-    margin: 20px 0; /* Add margin for spacing */
+
+    width: 100%; 
+    margin: 20px 0; 
     border-collapse: collapse;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -110,19 +97,19 @@ tr:hover {
     background-color: #e0e0e0;
 }
 
-/* Style the search button */
+
 .btn-search {
-    padding: 5px 15px; /* Adjust the padding as needed */
-    border: 2px solid #00cc00; /* Green border color */
-    color: #00cc00; /* Green text color */
-    background-color: transparent; /* Transparent background */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+    padding: 5px 15px; 
+    border: 2px solid #00cc00; 
+    color: #00cc00;
+    background-color: transparent; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* Hover effect for the search button */
+
 .btn-search:hover {
-    background-color: #00cc00; /* Green background color on hover */
-    color: #fff; /* White text color on hover */
+    background-color: #00cc00; 
+    color: #fff; 
 }
 
 /* @media (max-width: 768px) {

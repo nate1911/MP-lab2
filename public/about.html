@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <!-- Include Bootstrap CSS via CDN (optional) -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/stylesAbout.css">
 </head>
 <body>
-    <!-- Header section -->
     <header>
         <h1>About Me</h1>
     </header>
@@ -22,26 +20,24 @@
         </ul>
     </nav>
 
-    <!-- Main content section -->
     <main class="container">
-        <!-- Container for displaying picture, name, and bio -->
-        <div class="profile-container">
-            <div class="profile-picture">
-                <img src="./Assets/IMG_6187.png" alt="Profile Picture">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="profile-picture">
+                    <img src="./Assets/IMG_6187.png" alt="Profile Picture" class="img-fluid">
+                </div>
+                
             </div>
-            <div class="profile-details">
-                <h2>Nahom Teclemicael</h2>
-                <p>
-                    I'm passionate about cooking and experimenting with new recipes. In addition to my culinary interests, I'm also a hobby coder who enjoys exploring the world of programming. Currently, I reside in beautiful Stockholm, where I draw inspiration from both the vibrant food scene and the thriving tech community.
-                </p>
+            <div class="col-md-6">
+                <div class="profile-details">
+                    <h1 class="mt-4">Nahom Teclemicael</h1>
+                    <p>
+                        I'm passionate about cooking and experimenting with new recipes. In addition to my culinary interests, I'm also a hobby coder who enjoys exploring the world of programming. Currently, I reside in beautiful Stockholm, where I draw inspiration from both the vibrant food scene and the thriving tech community.
+                    </p>
+                </div>
             </div>
         </div>
     </main>
-
-    <!-- Footer section -->
-    <!-- <footer>
-        <p>&copy;</p>
-    </footer> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>

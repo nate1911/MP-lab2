@@ -52,7 +52,7 @@ POST http://localhost:3000/api/recipes
 Content-Type: application/json
 
 {
-    "title": "Chicken Alfredo Pasta",
+    "title": "Kebab Pizza",
     "ingredients": [
         "8 ounces fettuccine pasta",
         "2 boneless, skinless chicken breasts",
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/api/recipes/65099eedc7413861bdb4d7af
+PUT http://localhost:3000/api/recipes/6509a0e6aed01619629d1e2f
 Content-Type: application/json
 
 {
@@ -107,7 +107,7 @@ Content-Type: application/json
         "Fresh parsley for garnish"
     ],
     "instructions": "1. Cook the spaghetti in a large pot of salted boiling water until al dente. \n2. While the pasta is cooking, heat a skillet over medium heat and add the pancetta or guanciale. Cook until crispy. \n3. In a bowl, whisk together the eggs, Pecorino Romano cheese, Parmesan cheese, and a pinch of black pepper. \n4. When the pasta is ready, reserve a cup of pasta water and then drain the pasta. \n5. Immediately add the hot, drained pasta to the skillet with the cooked pancetta. Toss to combine. \n6. Remove the skillet from heat and quickly pour the egg and cheese mixture over the pasta. Toss the pasta and sauce together, adding reserved pasta water as needed to create a creamy consistency. \n7. Season with salt and additional black pepper to taste. \n8. Garnish with chopped fresh parsley. \n9. Serve your delicious Pasta Carbonara immediately.",
-    "cookingtime": 20
+    "cookingtime": 5
 }
 
 ###
